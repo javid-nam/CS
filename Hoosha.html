@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoosha Strike AI</title>
+<link rel="stylesheet" href="HooshaStyle.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+<div id="hud">
+<div class="hud-top">
+<div class="box hp">❤️ <span id="health">100</span></div>
+<div class="box">🎯 <span id="kills">0</span></div>
+<div class="box">🔫 <span id="gunName">AK-47</span> | <span id="ammo">30</span>/<span id="reserve">120</span></div>
+<div class="box">⭐ <span id="score">0</span></div>
+<div class="box">🌊 موج <span id="wave">1</span></div>
+<div class="box bomb">💣 <span id="bombStatus">بمب وسط مپ</span></div>
+</div>
+<div class="slots">
+<div class="slot active" id="slot-ak">1 AK-47</div>
+<div class="slot" id="slot-m4">2 M4A1</div>
+<div class="slot" id="slot-awp">3 AWP</div>
+<div class="slot" id="slot-deagle">4 Deagle</div>
+</div>
+<div id="crosshair"><span></span></div>
+<div id="hitmarker">X</div>
+<div id="damage"></div>
+<div id="killfeed"></div>
+<div id="plantBar"><div id="plantFill"></div></div>
+<div id="timer"></div>
+<div id="enemyCount"></div>
+</div>
+<div id="menu">
+<h1>🔫 هوشا استرایک : جنگ هوشمند</h1>
+<p>انمی‌ها مسلح‌ان و بهت شلیک می‌کنن! کاور بگیر!</p>
+<ul>
+<li>چپ شلیک | راست ایم | 1-4 تعویض گان | R خشاب</li>
+<li>E کاشت بمب در A یا B | Shift دویدن</li>
+<li>⚠️ انمی‌ها از دور می‌زنن، زیگ‌زاگ برو!</li>
+</ul>
+<button id="startBtn">ورود به میدان جنگ</button>
+</div>
+<div id="dead"><h1>کشته شدی</h1><p>کیل: <span id="finalKills">0</span> | موج: <span id="finalWave">1</span></p><button onclick="location.reload()">تلاش دوباره</button></div>
+<div id="win"><h1>بمب منفجر شد! بردی 💥</h1><p>امتیاز: <span id="winScore">0</span></p><button onclick="location.reload()">بازی دوباره</button></div>
+<script src="HooshaMain.js"></script>
+</body>
+</html>
